@@ -1,0 +1,5 @@
+# Hook working state (rendered logs in .agent-logs/ ARE committed)
+.claude/agent-log-state/
+.claude/agent-log-errors.txt
+.claude/settings.local.json
+node_modules/
