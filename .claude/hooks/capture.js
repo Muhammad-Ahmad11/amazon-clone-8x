@@ -124,7 +124,7 @@ function main() {
       sleep(300);
     }
     const text = input.last_assistant_message || r.text || '(no final text response captured)';
-    const num = promptCount || 1;
+    const num = promptCount; // 0 = response to a prompt sent before capture was installed
     const prompt = [...state.entries].reverse().find(e => e.type === 'PROMPT' && e.num === num);
     if (prompt && !prompt.model) prompt.model = r.model;
     state.entries.push({ type: 'RESPONSE', num, timestamp: now, model: r.model, text });
