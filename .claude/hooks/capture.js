@@ -8,7 +8,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const AUTHOR = process.env.AGENT_LOG_AUTHOR || 'SET-GITHUB-HANDLE';
+const AUTHOR = process.env.AGENT_LOG_AUTHOR || 'Muhammad-Ahmad11';
 const PROJECT = process.env.AGENT_LOG_PROJECT || 'amazon-clone';
 const TOOL = 'claude-code';
 
