@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><defs>
+  <linearGradient id="cyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#918470"/><stop offset="0.28" stop-color="#d5c7b2"/>
+    <stop offset="0.55" stop-color="#c9b79c"/><stop offset="1" stop-color="#655c4e"/>
+  </linearGradient>
+  <linearGradient id="vert" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#d5c7b2"/><stop offset="1" stop-color="#918470"/>
+  </linearGradient>
+  <linearGradient id="trimcyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#74787d"/><stop offset="0.35" stop-color="#b3b8bc"/>
+    <stop offset="1" stop-color="#74787d"/>
+  </linearGradient>
+  <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.5" stop-color="#a9aeb5"/><stop offset="1" stop-color="#dfe2e5"/>
+  </linearGradient>
+  <radialGradient id="floor" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#000" stop-opacity="0.22"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="0.5" cy="0" r="1">
+    <stop offset="0" stop-color="#fff6c8" stop-opacity="0.95"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/>
+  </radialGradient>
+</defs><rect width="800" height="800" fill="#ffffff"/><g transform="translate(400 400) scale(1.75) translate(-420 -380)">
+    <ellipse cx="400" cy="640" rx="230" ry="24" fill="url(#floor)"/>
+    <path d="M190 170 C260 260 420 300 520 330" fill="none" stroke="#655c4e" stroke-width="30" stroke-linecap="round"/>
+    <rect x="356" y="254" width="70" height="40" rx="8" fill="#9aa0a6" transform="rotate(20 391 274)"/>
+    <g transform="rotate(-14 420 470)">
+      <rect x="220" y="360" width="420" height="230" rx="110" fill="url(#vert)"/>
+      <path d="M260 420 C360 392 500 392 600 420" fill="none" stroke="#9aa0a6" stroke-width="7" stroke-linecap="round"/>
+      <rect x="590" y="404" width="12" height="34" rx="5" fill="#9aa0a6"/>
+      <rect x="300" y="460" width="260" height="104" rx="52" fill="#918470"/>
+      <path d="M326 494 H534" stroke="#9aa0a6" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <path d="M610 470 C660 520 680 600 640 660" fill="none" stroke="#655c4e" stroke-width="24" stroke-linecap="round"/></g></svg>

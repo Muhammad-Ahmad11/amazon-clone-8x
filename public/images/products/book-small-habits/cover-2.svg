@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><defs>
+  <linearGradient id="cyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#c8c4bd"/><stop offset="0.28" stop-color="#f6f3ec"/>
+    <stop offset="0.55" stop-color="#f4efe6"/><stop offset="1" stop-color="#9f9b96"/>
+  </linearGradient>
+  <linearGradient id="vert" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f6f3ec"/><stop offset="1" stop-color="#c8c4bd"/>
+  </linearGradient>
+  <linearGradient id="trimcyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#932923"/><stop offset="0.35" stop-color="#d36963"/>
+    <stop offset="1" stop-color="#932923"/>
+  </linearGradient>
+  <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.5" stop-color="#a9aeb5"/><stop offset="1" stop-color="#dfe2e5"/>
+  </linearGradient>
+  <radialGradient id="floor" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#000" stop-opacity="0.22"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="0.5" cy="0" r="1">
+    <stop offset="0" stop-color="#fff6c8" stop-opacity="0.95"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/>
+  </radialGradient>
+</defs><rect width="800" height="800" fill="#faf8f4"/><g transform="translate(400 410) rotate(-9) scale(0.9) translate(-400 -410)">
+    <ellipse cx="410" cy="680" rx="210" ry="22" fill="url(#floor)"/>
+    <rect x="262" y="132" width="310" height="540" rx="6" fill="#d9d4cb"/>
+    <rect x="250" y="120" width="310" height="540" rx="6" fill="#f4efe6"/>
+    <rect x="250" y="120" width="22" height="540" fill="#9f9b96" opacity="0.5"/>
+    <circle cx="410" cy="444" r="64" fill="#c4372f" opacity="0.18"/>
+    <path d="M300 524 C350 494 470 554 520 514" fill="none" stroke="#c4372f" stroke-width="5" opacity="0.6"/>
+    <text x="416" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="#c4372f">SMALL</text><text x="416" y="298" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="#c4372f">HABITS, BIG</text><text x="416" y="346" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="#c4372f">WEEKS</text>
+    <text x="410" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" letter-spacing="3" fill="#c4372f">DR. LENA HARTMANN</text></g></svg>

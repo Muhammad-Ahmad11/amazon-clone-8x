@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+
+/*
+  Design tokens.
+  Colours marked (amz) were measured on live amazon.com (see recon/README.md §3).
+  The rest are our own additions to fill gaps (hover/pressed states, focus, info).
+*/
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, 'Segoe UI', Roboto, Arial, sans-serif;
+
+  /* Chrome */
+  --color-nav: #131921; /* (amz) top bar */
+  --color-nav-2: #232f3e; /* (amz) second bar, footer */
+  --color-nav-3: #37475a; /* (amz) back-to-top bar */
+  --color-nav-hover: #3a4553;
+
+  /* Text */
+  --color-ink: #0f1111; /* (amz) body text */
+  --color-ink-muted: #565959; /* (amz) secondary text */
+  --color-ink-subtle: #767676;
+
+  /* Surfaces */
+  --color-canvas: #eaeded; /* (amz) grey page behind panels */
+  --color-canvas-soft: #f5f6f6;
+  --color-surface: #ffffff;
+  --color-line: #d5d9d9; /* (amz) borders */
+  --color-line-soft: #e7e9ec;
+  --color-image-bg: #f7f7f7;
+
+  /* Actions */
+  --color-brand: #ffd814; /* (amz) primary button */
+  --color-brand-hover: #f7ca00;
+  --color-brand-border: #fcd200;
+  --color-accent: #ffa41c; /* (amz) Buy Now */
+  --color-accent-hover: #fa8900;
+  --color-search: #febd69; /* (amz) search button */
+  --color-search-hover: #f3a847;
+  --color-cart-count: #f08804; /* (amz) cart badge */
+  --color-logo: #ff9900;
+
+  /* Links & focus */
+  --color-link: #2162a1; /* (amz) links */
+  --color-link-hover: #c7511f;
+  --color-focus: #007185;
+
+  /* Status */
+  --color-success: #0b7b3c; /* (amz) In Stock */
+  --color-success-bg: #e9f6ee;
+  --color-deal: #cc0c39; /* (amz) discount */
+  --color-deal-bg: #fdecef;
+  --color-warning: #b12704;
+  --color-warning-bg: #fff4e5;
+  --color-info-bg: #e6f4f6;
+  --color-star: #de7921;
+
+  /* Radii */
+  --radius-card: 8px; /* (amz) cart panels, buy box */
+  --radius-tile: 12px; /* (amz) homepage cards */
+
+  /* Shadows: Amazon is almost shadow-free; we keep one soft elevation for overlays only. */
+  --shadow-overlay: 0 10px 30px -10px rgb(15 17 17 / 0.35), 0 2px 6px rgb(15 17 17 / 0.12);
+  --shadow-card-hover: 0 4px 14px -4px rgb(15 17 17 / 0.18);
+
+  /* Type scale (measured sizes, renamed by role) */
+  --text-price: 1.75rem; /* 28px whole-number price */
+  --text-price--line-height: 1;
+
+  --animate-shimmer: shimmer 1.4s ease-in-out infinite;
+  --animate-slide-in-right: slide-in-right 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-fade-in: fade-in 160ms ease-out;
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes slide-in-right {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-canvas-soft font-sans text-sm leading-5 text-ink antialiased;
+  }
+  /* One consistent, visible focus ring for keyboard users (Amazon's is inconsistent). */
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 1ms !important;
+    }
+  }
+}
+
+@layer components {
+  .link {
+    @apply text-link hover:text-link-hover hover:underline;
+  }
+}

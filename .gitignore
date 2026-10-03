@@ -3,3 +3,5 @@
 .claude/agent-log-errors.txt
 .claude/settings.local.json
 node_modules/
+dist/
+*.tsbuildinfo

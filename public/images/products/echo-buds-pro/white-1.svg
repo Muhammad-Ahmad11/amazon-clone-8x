@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><defs>
+  <linearGradient id="cyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#c2c4c6"/><stop offset="0.28" stop-color="#f0f3f4"/>
+    <stop offset="0.55" stop-color="#eceff1"/><stop offset="1" stop-color="#999b9d"/>
+  </linearGradient>
+  <linearGradient id="vert" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f0f3f4"/><stop offset="1" stop-color="#c2c4c6"/>
+  </linearGradient>
+  <linearGradient id="trimcyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#2c2f35"/><stop offset="0.35" stop-color="#6b6f75"/>
+    <stop offset="1" stop-color="#2c2f35"/>
+  </linearGradient>
+  <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.5" stop-color="#a9aeb5"/><stop offset="1" stop-color="#dfe2e5"/>
+  </linearGradient>
+  <radialGradient id="floor" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#000" stop-opacity="0.22"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="0.5" cy="0" r="1">
+    <stop offset="0" stop-color="#fff6c8" stop-opacity="0.95"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/>
+  </radialGradient>
+</defs><rect width="800" height="800" fill="#ffffff"/>
+    <ellipse cx="400" cy="650" rx="200" ry="26" fill="url(#floor)"/>
+    <rect x="270" y="420" width="260" height="220" rx="96" fill="url(#cyl)"/>
+    <path d="M270 500 H530" stroke="#999b9d" stroke-width="4" opacity="0.6"/>
+    <rect x="270" y="420" width="260" height="80" rx="40" fill="#f0f3f4" opacity="0.35"/>
+    <circle cx="400" cy="560" r="7" fill="#5ad17a"/>
+    <g transform="rotate(-18 300 300)">
+      <rect x="282" y="290" width="36" height="130" rx="18" fill="url(#cyl)"/>
+      <circle cx="300" cy="280" r="58" fill="url(#cyl)"/>
+      <circle cx="300" cy="280" r="26" fill="#999b9d"/>
+    </g>
+    <g transform="rotate(18 500 300)">
+      <rect x="482" y="290" width="36" height="130" rx="18" fill="url(#cyl)"/>
+      <circle cx="500" cy="280" r="58" fill="url(#cyl)"/>
+      <circle cx="500" cy="280" r="26" fill="#999b9d"/>
+    </g></svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><defs>
+  <linearGradient id="cyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#1f2227"/><stop offset="0.28" stop-color="#5a5d62"/>
+    <stop offset="0.55" stop-color="#2b2f36"/><stop offset="1" stop-color="#16181b"/>
+  </linearGradient>
+  <linearGradient id="vert" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#5a5d62"/><stop offset="1" stop-color="#1f2227"/>
+  </linearGradient>
+  <linearGradient id="trimcyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#74787d"/><stop offset="0.35" stop-color="#b3b8bc"/>
+    <stop offset="1" stop-color="#74787d"/>
+  </linearGradient>
+  <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.5" stop-color="#a9aeb5"/><stop offset="1" stop-color="#dfe2e5"/>
+  </linearGradient>
+  <radialGradient id="floor" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#000" stop-opacity="0.22"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="0.5" cy="0" r="1">
+    <stop offset="0" stop-color="#fff6c8" stop-opacity="0.95"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/>
+  </radialGradient>
+</defs><rect width="800" height="800" fill="#e6e6e7"/><rect x="0" y="0" width="800" height="800" fill="#e6e6e7"/>
+        <rect x="32" y="32" width="736" height="736" rx="28" fill="#ffffff" opacity="0.72"/>
+        <text x="76" y="110" font-family="Arial, sans-serif" font-size="22" letter-spacing="4" fill="#565959">TRAILFORM</text>
+        <text x="76" y="166" font-family="Arial, sans-serif" font-weight="800" font-size="46" fill="#0f1111">Why you’ll love it</text>
+        <g transform="translate(400 350) scale(0.44) translate(-400 -410)">
+    <ellipse cx="400" cy="640" rx="230" ry="24" fill="url(#floor)"/>
+    <path d="M190 170 C260 260 420 300 520 330" fill="none" stroke="#16181b" stroke-width="30" stroke-linecap="round"/>
+    <rect x="356" y="254" width="70" height="40" rx="8" fill="#9aa0a6" transform="rotate(20 391 274)"/>
+    <g transform="rotate(-14 420 470)">
+      <rect x="220" y="360" width="420" height="230" rx="110" fill="url(#vert)"/>
+      <path d="M260 420 C360 392 500 392 600 420" fill="none" stroke="#9aa0a6" stroke-width="7" stroke-linecap="round"/>
+      <rect x="590" y="404" width="12" height="34" rx="5" fill="#9aa0a6"/>
+      <rect x="300" y="460" width="260" height="104" rx="52" fill="#1f2227"/>
+      <path d="M326 494 H534" stroke="#9aa0a6" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <path d="M610 470 C660 520 680 600 640 660" fill="none" stroke="#16181b" stroke-width="24" stroke-linecap="round"/></g>
+        <rect x="64" y="510" width="672" height="2" fill="#d5d9d9"/>
+        
+        <circle cx="94" cy="560" r="18" fill="#0b7b3c"/>
+        <path d="M85 560 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="569" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Wear as sling or chest pack</text>
+        <circle cx="94" cy="624" r="18" fill="#0b7b3c"/>
+        <path d="M85 624 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="633" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Anti-theft back pocket</text>
+        <circle cx="94" cy="688" r="18" fill="#0b7b3c"/>
+        <path d="M85 688 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="697" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Fits a 10" tablet</text></svg>

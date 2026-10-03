@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><defs>
+  <linearGradient id="cyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#8d2822"/><stop offset="0.28" stop-color="#d1635d"/>
+    <stop offset="0.55" stop-color="#c4372f"/><stop offset="1" stop-color="#621c18"/>
+  </linearGradient>
+  <linearGradient id="vert" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#d1635d"/><stop offset="1" stop-color="#8d2822"/>
+  </linearGradient>
+  <linearGradient id="trimcyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#adaeb0"/><stop offset="0.35" stop-color="#eceef0"/>
+    <stop offset="1" stop-color="#adaeb0"/>
+  </linearGradient>
+  <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.5" stop-color="#a9aeb5"/><stop offset="1" stop-color="#dfe2e5"/>
+  </linearGradient>
+  <radialGradient id="floor" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#000" stop-opacity="0.22"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="0.5" cy="0" r="1">
+    <stop offset="0" stop-color="#fff6c8" stop-opacity="0.95"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/>
+  </radialGradient>
+</defs><rect width="800" height="800" fill="#f8e7e6"/><rect x="0" y="0" width="800" height="800" fill="#f8e7e6"/>
+        <rect x="32" y="32" width="736" height="736" rx="28" fill="#ffffff" opacity="0.72"/>
+        <text x="76" y="110" font-family="Arial, sans-serif" font-size="22" letter-spacing="4" fill="#565959">HEARTH &amp; CO.</text>
+        <text x="76" y="166" font-family="Arial, sans-serif" font-weight="800" font-size="46" fill="#0f1111">Why you’ll love it</text>
+        <g transform="translate(400 350) scale(0.44) translate(-400 -410)">
+    <ellipse cx="400" cy="668" rx="150" ry="26" fill="url(#floor)"/>
+    <path d="M318 250 L482 250 L460 660 Q458 672 446 672 L354 672 Q342 672 340 660 Z" fill="url(#cyl)"/>
+    <rect x="300" y="196" width="200" height="66" rx="20" fill="#2b2f36"/>
+    <rect x="312" y="182" width="176" height="30" rx="14" fill="#3a3f47"/>
+    <rect x="420" y="188" width="50" height="14" rx="7" fill="#55595f"/>
+    <rect x="326" y="420" width="148" height="70" fill="#621c18" opacity="0.2"/></g>
+        <rect x="64" y="510" width="672" height="2" fill="#d5d9d9"/>
+        
+        <circle cx="94" cy="560" r="18" fill="#0b7b3c"/>
+        <path d="M85 560 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="569" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">One-hand flip lid</text>
+        <circle cx="94" cy="624" r="18" fill="#0b7b3c"/>
+        <path d="M85 624 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="633" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Hot for 6 hours</text>
+        <circle cx="94" cy="688" r="18" fill="#0b7b3c"/>
+        <path d="M85 688 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="697" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Spill-proof seal</text></svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><defs>
+  <linearGradient id="cyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#c2c4c6"/><stop offset="0.28" stop-color="#f0f3f4"/>
+    <stop offset="0.55" stop-color="#eceff1"/><stop offset="1" stop-color="#999b9d"/>
+  </linearGradient>
+  <linearGradient id="vert" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f0f3f4"/><stop offset="1" stop-color="#c2c4c6"/>
+  </linearGradient>
+  <linearGradient id="trimcyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#97999d"/><stop offset="0.35" stop-color="#d7d9dd"/>
+    <stop offset="1" stop-color="#97999d"/>
+  </linearGradient>
+  <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.5" stop-color="#a9aeb5"/><stop offset="1" stop-color="#dfe2e5"/>
+  </linearGradient>
+  <radialGradient id="floor" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#000" stop-opacity="0.22"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="0.5" cy="0" r="1">
+    <stop offset="0" stop-color="#fff6c8" stop-opacity="0.95"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/>
+  </radialGradient>
+</defs><rect width="800" height="800" fill="#f6f8f9"/><rect x="0" y="0" width="800" height="800" fill="#f6f8f9"/>
+        <rect x="32" y="32" width="736" height="736" rx="28" fill="#ffffff" opacity="0.72"/>
+        <text x="76" y="110" font-family="Arial, sans-serif" font-size="22" letter-spacing="4" fill="#565959">NORTHWIND AUDIO</text>
+        <text x="76" y="166" font-family="Arial, sans-serif" font-weight="800" font-size="46" fill="#0f1111">Why you’ll love it</text>
+        <g transform="translate(400 350) scale(0.44) translate(-400 -410)">
+    <ellipse cx="400" cy="650" rx="220" ry="26" fill="url(#floor)"/>
+    <path d="M215 430 C215 200 585 200 585 430" fill="none" stroke="#999b9d" stroke-width="44" stroke-linecap="round"/>
+    <path d="M215 430 C215 200 585 200 585 430" fill="none" stroke="url(#vert)" stroke-width="30" stroke-linecap="round"/>
+    <path d="M262 300 C320 238 480 238 538 300" fill="none" stroke="#c9ccd1" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+    <rect x="196" y="380" width="40" height="70" rx="12" fill="#97999d"/>
+    <rect x="564" y="380" width="40" height="70" rx="12" fill="#97999d"/>
+    <rect x="160" y="420" width="120" height="210" rx="58" fill="url(#cyl)"/>
+    <rect x="262" y="438" width="40" height="174" rx="20" fill="#999b9d"/>
+    <rect x="520" y="420" width="120" height="210" rx="58" fill="url(#cyl)"/>
+    <rect x="498" y="438" width="40" height="174" rx="20" fill="#999b9d"/>
+    <circle cx="220" cy="525" r="22" fill="none" stroke="#f5f6f7" stroke-width="4" opacity="0.6"/>
+    <circle cx="580" cy="525" r="22" fill="none" stroke="#f5f6f7" stroke-width="4" opacity="0.6"/></g>
+        <rect x="64" y="510" width="672" height="2" fill="#d5d9d9"/>
+        
+        <circle cx="94" cy="560" r="18" fill="#0b7b3c"/>
+        <path d="M85 560 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="569" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Adaptive noise cancelling</text>
+        <circle cx="94" cy="624" r="18" fill="#0b7b3c"/>
+        <path d="M85 624 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="633" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">50-hour battery life</text>
+        <circle cx="94" cy="688" r="18" fill="#0b7b3c"/>
+        <path d="M85 688 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="697" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Connect two devices at once</text></svg>

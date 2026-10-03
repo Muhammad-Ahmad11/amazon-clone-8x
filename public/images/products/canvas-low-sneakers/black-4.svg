@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><defs>
+  <linearGradient id="cyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#1f2227"/><stop offset="0.28" stop-color="#5a5d62"/>
+    <stop offset="0.55" stop-color="#2b2f36"/><stop offset="1" stop-color="#16181b"/>
+  </linearGradient>
+  <linearGradient id="vert" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#5a5d62"/><stop offset="1" stop-color="#1f2227"/>
+  </linearGradient>
+  <linearGradient id="trimcyl" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#b7b5b0"/><stop offset="0.35" stop-color="#f7f5ef"/>
+    <stop offset="1" stop-color="#b7b5b0"/>
+  </linearGradient>
+  <linearGradient id="chrome" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f4f5f6"/><stop offset="0.5" stop-color="#a9aeb5"/><stop offset="1" stop-color="#dfe2e5"/>
+  </linearGradient>
+  <radialGradient id="floor" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#000" stop-opacity="0.22"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="0.5" cy="0" r="1">
+    <stop offset="0" stop-color="#fff6c8" stop-opacity="0.95"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/>
+  </radialGradient>
+</defs><rect width="800" height="800" fill="#e6e6e7"/><rect x="0" y="0" width="800" height="800" fill="#e6e6e7"/>
+        <rect x="32" y="32" width="736" height="736" rx="28" fill="#ffffff" opacity="0.72"/>
+        <text x="76" y="110" font-family="Arial, sans-serif" font-size="22" letter-spacing="4" fill="#565959">EVERYDAY BASICS</text>
+        <text x="76" y="166" font-family="Arial, sans-serif" font-weight="800" font-size="46" fill="#0f1111">Why you’ll love it</text>
+        <g transform="translate(400 350) scale(0.44) translate(-400 -410)">
+    <ellipse cx="400" cy="610" rx="300" ry="24" fill="url(#floor)"/>
+    <path d="M130 540 C130 600 160 600 200 600 L640 600 C690 600 700 560 680 540 Z" fill="#f4f1ea"/>
+    <path d="M130 540 L690 540 L686 560 L134 560 Z" fill="#d7d4ce"/>
+    <path d="M140 540 C130 450 170 360 250 330 L330 300 C380 300 420 360 470 400 C540 450 650 460 680 520 L690 540 Z" fill="url(#vert)"/>
+    <path d="M140 540 C150 470 170 420 200 390 C200 450 210 500 240 540 Z" fill="#1f2227"/>
+    <path d="M560 455 C620 465 670 490 686 532" fill="none" stroke="#16181b" stroke-width="10" opacity="0.6"/>
+    <path d="M318 322 l26 22" stroke="#f4f1ea" stroke-width="8" stroke-linecap="round"/><path d="M354 342 l26 22" stroke="#f4f1ea" stroke-width="8" stroke-linecap="round"/><path d="M390 362 l26 22" stroke="#f4f1ea" stroke-width="8" stroke-linecap="round"/><path d="M426 382 l26 22" stroke="#f4f1ea" stroke-width="8" stroke-linecap="round"/>
+    <path d="M260 420 C330 380 420 410 520 470" fill="none" stroke="#8a8d90" stroke-width="10" opacity="0.6" stroke-linecap="round"/></g>
+        <rect x="64" y="510" width="672" height="2" fill="#d5d9d9"/>
+        
+        <circle cx="94" cy="560" r="18" fill="#0b7b3c"/>
+        <path d="M85 560 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="569" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Classic low-top style</text>
+        <circle cx="94" cy="624" r="18" fill="#0b7b3c"/>
+        <path d="M85 624 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="633" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Cushioned insole</text>
+        <circle cx="94" cy="688" r="18" fill="#0b7b3c"/>
+        <path d="M85 688 l6 6 l12 -13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="128" y="697" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0f1111">Unisex sizing</text></svg>
