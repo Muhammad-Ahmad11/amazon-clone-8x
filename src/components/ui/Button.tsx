@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react';
+import type { ButtonHTMLAttributes, ReactNode, Ref } from 'react';
 import { Link, type LinkProps } from 'react-router';
 import { cn } from '../../lib/cn';
 import { Spinner } from './Spinner';
@@ -42,6 +42,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   fullWidth?: boolean;
   loading?: boolean;
   icon?: ReactNode;
+  /** React 19 passes ref as a prop; it lands on the <button> via ...rest. */
+  ref?: Ref<HTMLButtonElement>;
 }
 
 export function Button({
@@ -74,6 +76,7 @@ interface ButtonLinkProps extends LinkProps {
   variant?: ButtonVariant;
   size?: ButtonSize;
   fullWidth?: boolean;
+  ref?: Ref<HTMLAnchorElement>;
 }
 
 export function ButtonLink({ variant, size, fullWidth, className, ...rest }: ButtonLinkProps) {

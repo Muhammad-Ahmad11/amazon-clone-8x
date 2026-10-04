@@ -1,4 +1,4 @@
-import { useId, type InputHTMLAttributes, type ReactNode, type SelectHTMLAttributes } from 'react';
+import { useId, type InputHTMLAttributes, type ReactNode, type Ref, type SelectHTMLAttributes } from 'react';
 import { cn } from '../../lib/cn';
 import { Icon } from './Icon';
 
@@ -13,14 +13,16 @@ interface FieldShellProps {
   hint?: ReactNode;
   error?: string;
   optional?: boolean;
+  /** "inline" puts the label beside the control, for compact toolbars (e.g. "Sort by"). */
+  layout?: 'stacked' | 'inline';
   children: ReactNode;
   className?: string;
 }
 
-function FieldShell({ id, label, hint, error, optional, children, className }: FieldShellProps) {
+function FieldShell({ id, label, hint, error, optional, layout = 'stacked', children, className }: FieldShellProps) {
   return (
-    <div className={cn('flex flex-col gap-1', className)}>
-      <label htmlFor={id} className="text-sm font-semibold text-ink">
+    <div className={cn('flex gap-1', layout === 'inline' ? 'flex-row items-center gap-2' : 'flex-col', className)}>
+      <label htmlFor={id} className={cn('text-sm text-ink', layout === 'inline' ? 'whitespace-nowrap' : 'font-semibold')}>
         {label}
         {optional && <span className="font-normal text-ink-muted"> (optional)</span>}
       </label>
@@ -46,6 +48,8 @@ interface TextFieldProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'id
   error?: string;
   optional?: boolean;
   containerClassName?: string;
+  /** React 19 passes ref as a prop; it lands on the <input> via ...rest. */
+  ref?: Ref<HTMLInputElement>;
 }
 
 export function TextField({ label, hint, error, optional, containerClassName, className, ...rest }: TextFieldProps) {
@@ -67,13 +71,15 @@ interface SelectFieldProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>,
   label: string;
   hint?: ReactNode;
   error?: string;
+  layout?: 'stacked' | 'inline';
   containerClassName?: string;
+  ref?: Ref<HTMLSelectElement>;
 }
 
-export function SelectField({ label, hint, error, containerClassName, className, children, ...rest }: SelectFieldProps) {
+export function SelectField({ label, hint, error, layout, containerClassName, className, children, ...rest }: SelectFieldProps) {
   const id = useId();
   return (
-    <FieldShell id={id} label={label} hint={hint} error={error} className={containerClassName}>
+    <FieldShell id={id} label={label} hint={hint} error={error} layout={layout} className={containerClassName}>
       <div className="relative">
         <select
           id={id}

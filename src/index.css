@@ -26,6 +26,8 @@
   --color-line: #d5d9d9; /* (amz) borders */
   --color-line-soft: #e7e9ec;
   --color-image-bg: #f7f7f7;
+  --color-hero-from: #fff8e6; /* homepage hero: a warm wash of the brand yellow */
+  --color-hero-to: #fde6ad;
 
   /* Actions */
   --color-brand: #ffd814; /* (amz) primary button */
@@ -68,6 +70,8 @@
   --animate-shimmer: shimmer 1.4s ease-in-out infinite;
   --animate-slide-in-right: slide-in-right 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
   --animate-fade-in: fade-in 160ms ease-out;
+  --animate-pop: pop 320ms cubic-bezier(0.3, 1.6, 0.5, 1);
+  --animate-slide-up: slide-up 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
 
   @keyframes shimmer {
     0% { background-position: -200% 0; }
@@ -80,6 +84,16 @@
   @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
+  }
+  /* Scale only: Tailwind v4 positions with the separate `translate` property, so this composes with it. */
+  @keyframes pop {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.45); }
+    100% { transform: scale(1); }
+  }
+  @keyframes slide-up {
+    from { transform: translateY(16px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
   }
 }
 
@@ -109,5 +123,17 @@
 @layer components {
   .link {
     @apply text-link hover:text-link-hover hover:underline;
+  }
+  /* The teal focus ring is too faint on the dark header and footer. */
+  .on-dark :focus-visible {
+    outline-color: #ffffff;
+  }
+}
+
+/* For swipe rows: they scroll by touch or trackpad, and the cut-off last item shows there is more. */
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

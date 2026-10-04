@@ -6,6 +6,11 @@ interface QuantityStepperProps {
   onChange: (next: number) => void;
   /** When provided, the minus button becomes a bin at quantity 1 (Amazon cart behaviour, recon §2.8). */
   onRemove?: () => void;
+  /**
+   * When provided, + stays focusable at the maximum (aria-disabled) and pressing it calls this, so the UI can
+   * explain the limit. Without it, + is disabled, which drops keyboard focus and says nothing.
+   */
+  onLimit?: () => void;
   min?: number;
   max?: number;
   /** Used in accessible labels, e.g. the product name. */
@@ -19,6 +24,7 @@ export function QuantityStepper({
   value,
   onChange,
   onRemove,
+  onLimit,
   min = 1,
   max = 10,
   itemLabel = 'item',
@@ -27,9 +33,10 @@ export function QuantityStepper({
   className,
 }: QuantityStepperProps) {
   const atMin = value <= min;
+  const atMax = value >= max;
   const showBin = atMin && Boolean(onRemove);
   const btn = cn(
-    'grid place-items-center rounded-full text-ink transition-colors hover:bg-brand/40 disabled:opacity-40 disabled:hover:bg-transparent',
+    'grid place-items-center rounded-full text-ink transition-colors hover:bg-brand/40 disabled:opacity-40 disabled:hover:bg-transparent aria-disabled:opacity-40 aria-disabled:hover:bg-transparent',
     size === 'sm' ? 'size-8' : 'size-10',
   );
 
@@ -58,8 +65,9 @@ export function QuantityStepper({
       <button
         type="button"
         className={btn}
-        disabled={disabled || value >= max}
-        onClick={() => onChange(value + 1)}
+        disabled={disabled || (atMax && !onLimit)}
+        aria-disabled={atMax && onLimit ? true : undefined}
+        onClick={() => (atMax ? onLimit?.() : onChange(value + 1))}
         aria-label={`Increase quantity of ${itemLabel}`}
       >
         <Icon name="plus" size={size === 'sm' ? 16 : 18} />

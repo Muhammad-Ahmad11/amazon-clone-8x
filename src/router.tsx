@@ -1,19 +1,34 @@
 import { createBrowserRouter } from 'react-router';
+import { CheckoutLayout } from './components/layout/CheckoutLayout';
+import { SiteLayout } from './components/layout/SiteLayout';
+import { CartPage } from './pages/CartPage';
+import { CheckoutPage } from './pages/CheckoutPage';
 import { DesignSystemPage } from './pages/DesignSystemPage';
-import { FoundationIndexPage } from './pages/FoundationIndexPage';
+import { HomePage } from './pages/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { OrderConfirmationPage } from './pages/OrderConfirmationPage';
+import { ProductPage } from './pages/ProductPage';
+import { SearchPage } from './pages/SearchPage';
 
 /*
-  Routes are added stage by stage. Planned:
-    /                 home
-    /s?k=&...         search results (all state in the URL)
-    /dp/:productId    product detail (?variant=)
-    /cart
-    /checkout         focused layout without the main nav
-    /order/:orderId   confirmation
+  Shopping pages share the full header; checkout gets its own focused layout without search or the
+  category bar (recon §2.9). The confirmation returns to the full header, since shopping resumes there.
 */
 export const router = createBrowserRouter([
-  { path: '/', element: <FoundationIndexPage /> },
+  {
+    element: <SiteLayout />,
+    children: [
+      { path: '/', element: <HomePage /> },
+      { path: '/s', element: <SearchPage /> },
+      { path: '/dp/:productId', element: <ProductPage /> },
+      { path: '/cart', element: <CartPage /> },
+      { path: '/order/:orderId', element: <OrderConfirmationPage /> },
+      { path: '*', element: <NotFoundPage /> },
+    ],
+  },
+  {
+    element: <CheckoutLayout />,
+    children: [{ path: '/checkout', element: <CheckoutPage /> }],
+  },
   { path: '/design-system', element: <DesignSystemPage /> },
-  { path: '*', element: <NotFoundPage /> },
 ]);
