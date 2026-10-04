@@ -4,7 +4,9 @@ An Amazon.com-inspired shopping experience, rebuilt as a frontend product assign
 
 ## Live Demo
 
-> Live demo: Coming soon
+**Live production:** https://amazon-clone-8x-navy.vercel.app/
+
+The application is deployed on Vercel and the production build is live.
 
 ## What I Built
 
